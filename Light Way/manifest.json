@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Light Way",
+  "version": "1.0",
+  "description": "Плавное затемнение экрана чёрным ползунком.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

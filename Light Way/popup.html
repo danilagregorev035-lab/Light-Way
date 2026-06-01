@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 240px;
+      padding: 20px;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+    }
+    h3 { margin: 0 0 12px; font-size: 18px; }
+    input[type="range"] { width: 100%; margin: 10px 0; cursor: pointer; }
+    #value { font-weight: bold; font-size: 16px; margin-left: 5px; }
+    .label { display: flex; justify-content: space-between; align-items: center; }
+    #status { margin-top: 12px; font-size: 13px; color: #666; }
+  </style>
+</head>
+<body>
+  <h3>🌙 Light Way</h3>
+  <div class="label">
+    <span>Затемнение</span>
+    <span><output id="value">0</output>%</span>
+  </div>
+  <input type="range" id="darkness" min="0" max="100" value="0" step="1">
+  <div id="status">Статус: выключено</div>
+  <script src="popup.js"></script>
+</body>
+</html>
