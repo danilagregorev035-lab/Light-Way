@@ -3,6 +3,10 @@ READ THIS!!! HOW TO INSTALL LIGHT WAY FIRST step: DOWNLOAD AND UNZIP THEN GO TO 
 
 
 
+
+
+
+
 Light-Way(MY BIGGEST PROJECT!AND DELETE TUTORIAL AND README!!!)
 🌙 Light Way — Black Screen Overlay for Your Browser
 A simple, lightweight, and effective browser extension that darkens any web page with a fully adjustable black overlay.
