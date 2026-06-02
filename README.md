@@ -1,4 +1,4 @@
-# Light-Way (Before installing the extension, make sure to watch this video https://youtu.be/kMhTPN7VVN4)
+# Light-Way (Before installing the extension, make sure to watch this video https://youtu.be/Pwf-yf85Dug?si=VyE4DMX75i15qW8X)
 READ THIS!!! HOW TO INSTALL LIGHT WAY FIRST step: DOWNLOAD AND UNZIP THEN GO TO THE BROWSER AND WRITE IN THE ADDRESS BAR: opera://extensions and then click on the first button (load the unpacked extensions) and enjoy! 
 
 
