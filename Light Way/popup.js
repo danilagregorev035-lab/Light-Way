@@ -2,7 +2,7 @@ const slider = document.getElementById('darkness');
 const valueDisplay = document.getElementById('value');
 const statusDiv = document.getElementById('status');
 
-// === Проверяем, можно ли работать с текущей вкладкой ===
+
 async function getCurrentTab() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   if (!tab?.id) throw new Error('Нет активной вкладки');
@@ -13,7 +13,7 @@ async function getCurrentTab() {
   return tab;
 }
 
-// === Узнаём текущую прозрачность оверлея ===
+
 async function loadDarkness() {
   try {
     const tab = await getCurrentTab();
@@ -29,7 +29,7 @@ async function loadDarkness() {
   }
 }
 
-// === Применяем затемнение ===
+
 slider.addEventListener('input', async () => {
   const percent = Number(slider.value);
   updateUI(percent);
@@ -45,7 +45,7 @@ slider.addEventListener('input', async () => {
   }
 });
 
-// === Вспомогательные функции ===
+
 function updateUI(value) {
   valueDisplay.textContent = value;
   statusDiv.textContent = value === 0 ? 'Статус: выключено' : `Статус: включено (${value}%)`;
@@ -56,7 +56,7 @@ function showError(msg) {
   statusDiv.style.color = 'red';
 }
 
-// === Функции, выполняемые на странице (не видят переменные попапа) ===
+
 function getOverlayOpacity() {
   const overlay = document.getElementById('light-way-overlay');
   if (!overlay) return 0;
@@ -83,5 +83,5 @@ function setDarkness(percent) {
   overlay.style.opacity = percent / 100;
 }
 
-// === Загружаем начальное состояние ===
+
 loadDarkness();
